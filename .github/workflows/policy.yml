@@ -1,0 +1,23 @@
+name: policy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  opa:
+    name: opa policy checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup Conftest
+        uses: princespaghetti/setup-conftest@v1
+      - name: Run policy tests
+        run: conftest test policy/examples --policy policy/opa
