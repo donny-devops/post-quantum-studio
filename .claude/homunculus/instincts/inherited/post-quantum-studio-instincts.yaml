@@ -1,0 +1,505 @@
+# Instincts generated from https://github.com/donny-devops/post-quantum-studio
+# Generated: 2026-05-23T17:11:19.118Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: post-quantum-studio-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Commit Length
+
+## Action
+
+Keep commit messages concise (~27 characters)
+
+## Evidence
+
+- Average commit message length: 27 chars
+- Based on 34 commits
+
+---
+id: post-quantum-studio-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: post-quantum-studio-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Export Style
+
+## Action
+
+Prefer default exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: default
+
+---
+id: post-quantum-studio-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: lib, test
+
+---
+id: post-quantum-studio-test-colocate
+trigger: "when writing tests"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Test Colocate
+
+## Action
+
+Place test file next to the source file (e.g., Button.test.tsx next to Button.tsx)
+
+## Evidence
+
+- Colocated test pattern detected
+- Tests live alongside source files
+
+---
+id: post-quantum-studio-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~28x per month
+- Files: /*, src/test/*, src/lib/pqc/*
+
+---
+id: post-quantum-studio-workflow-add-architecture-document
+trigger: "when doing add architecture document"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Workflow Add Architecture Document
+
+## Action
+
+Follow the add-architecture-document workflow:
+1. Create a new markdown file in docs/architecture/
+2. Describe the architecture or system in the file
+3. Commit the new file with a descriptive message
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: docs/architecture/*.md
+
+---
+id: post-quantum-studio-workflow-add-operations-guide
+trigger: "when doing add operations guide"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Workflow Add Operations Guide
+
+## Action
+
+Follow the add-operations-guide workflow:
+1. Create a new markdown file in docs/operations/
+2. Write the operational guide in the file
+3. Commit the new file with a descriptive message
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: docs/operations/*.md
+
+---
+id: post-quantum-studio-workflow-add-github-workflow
+trigger: "when doing add github workflow"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Workflow Add Github Workflow
+
+## Action
+
+Follow the add-github-workflow workflow:
+1. Create a new YAML file in .github/workflows/
+2. Define the workflow steps in the YAML file
+3. Commit the new workflow file
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: .github/workflows/*.yml
+
+---
+id: post-quantum-studio-workflow-update-skill-guide
+trigger: "when doing update skill guide"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Workflow Update Skill Guide
+
+## Action
+
+Follow the update-skill-guide workflow:
+1. Edit SKILL.md to add or update skills/lanes
+2. Commit the changes with a descriptive message
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: SKILL.md
+
+---
+id: post-quantum-studio-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct File Naming
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.files
+- Consistent file naming in src/lib and src/test
+
+---
+id: post-quantum-studio-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Function Naming
+
+## Action
+
+Name the function using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.functions
+- TypeScript code style in src/lib
+
+---
+id: post-quantum-studio-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase convention
+
+## Evidence
+
+- Pattern in namingConventions.classes
+- TypeScript code style in src/lib
+
+---
+id: post-quantum-studio-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE convention
+
+## Evidence
+
+- Pattern in namingConventions.constants
+- TypeScript code style in src/lib
+
+---
+id: post-quantum-studio-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Import Style
+
+## Action
+
+Use a mixed import style as appropriate for the module
+
+## Evidence
+
+- importStyle: mixed in codeStyle
+- Observed in src/lib imports
+
+---
+id: post-quantum-studio-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Export Style
+
+## Action
+
+Use default export style
+
+## Evidence
+
+- exportStyle: default in codeStyle
+- Observed in src/lib exports
+
+---
+id: post-quantum-studio-instinct-test-location
+trigger: "When adding tests for a feature"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Test Location
+
+## Action
+
+Place test files colocated with the code under src/test or src/lib
+
+## Evidence
+
+- testLocation: colocated in architecture
+- Pattern in src/test and src/lib/pqc
+
+---
+id: post-quantum-studio-instinct-test-naming
+trigger: "When naming test files"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Test Naming
+
+## Action
+
+Use .test. in the filename (e.g., feature.test.ts)
+
+## Evidence
+
+- filesInvolved: **/*.test.* in feature-development workflow
+- Pattern in src/test
+
+---
+id: post-quantum-studio-instinct-test-framework
+trigger: "When writing new tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Test Framework
+
+## Action
+
+Use Vitest as the test framework
+
+## Evidence
+
+- Add Vitest config
+- vitest.config.ts present
+
+---
+id: post-quantum-studio-instinct-commit-format
+trigger: "When making a commit"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Commit Format
+
+## Action
+
+Write a concise, imperative commit message describing the action (e.g., 'Add feature', 'Update docs')
+
+## Evidence
+
+- Commits like 'Add CI security workflow', 'Add test setup'
+- No prefixes, average length 27
+
+---
+id: post-quantum-studio-instinct-add-architecture-document
+trigger: "When someone wants to document a new architecture or system design"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Add Architecture Document
+
+## Action
+
+Create a new markdown file in docs/architecture/, describe the architecture, and commit with a descriptive message
+
+## Evidence
+
+- add-architecture-document workflow
+- Commits creating docs/architecture/*.md
+
+---
+id: post-quantum-studio-instinct-add-operations-guide
+trigger: "When someone wants to document an operational process or guide"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Add Operations Guide
+
+## Action
+
+Create a new markdown file in docs/operations/, write the guide, and commit with a descriptive message
+
+## Evidence
+
+- add-operations-guide workflow
+- Commits creating docs/operations/*.md
+
+---
+id: post-quantum-studio-instinct-add-github-workflow
+trigger: "When someone wants to automate a new process in GitHub Actions"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Add Github Workflow
+
+## Action
+
+Create a new YAML file in .github/workflows/, define the workflow steps, and commit the new file
+
+## Evidence
+
+- add-github-workflow workflow
+- Commits adding .github/workflows/*.yml
+
+---
+id: post-quantum-studio-instinct-update-skill-guide
+trigger: "When someone wants to add or update project skills or development lanes"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: donny-devops/post-quantum-studio
+---
+
+# Post Quantum Studio Instinct Update Skill Guide
+
+## Action
+
+Edit SKILL.md to add or update skills/lanes and commit with a descriptive message
+
+## Evidence
+
+- update-skill-guide workflow
+- Commits editing SKILL.md
+
