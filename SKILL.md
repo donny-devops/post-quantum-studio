@@ -60,9 +60,10 @@ npm run sbom
 - Azure AI Foundry for governed hosted agents, model routing, evaluations, and observability.
 - QDK for sandboxed quantum research workflows.
 - Roo Code and Kiro for supervised local/spec-driven agentic coding.
-- Mistral AI as an optional approved model/provider lane when model evaluation, data-handling, and deployment constraints are documented.
+- Goose, Factory, Workshop.ai, Qodo, Pi, and Mistral AI as candidate or approved AI development/model lanes only when model evaluation, data-handling, licensing, identity, and deployment constraints are documented.
 - Zeek and Snort for network telemetry and detection research.
 - ONA for network asset intelligence and topology context.
+- CommandCode for reviewed command catalogs and safe operations recipes.
 - Snyk, OWASP ZAP, CodeQL, Gitleaks, OpenSSF Scorecard, and npm audit for security assurance.
 - Nmap for authorized discovery only in owned lab ranges.
 - ngrok for short-lived demos only, never production traffic or secret-bearing callbacks without explicit approval.
