@@ -1,0 +1,36 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '08:00'
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+      - security
+    groups:
+      nextjs-platform:
+        patterns:
+          - next
+          - eslint-config-next
+      react-platform:
+        patterns:
+          - react
+          - react-dom
+          - '@types/react*'
+      test-tooling:
+        patterns:
+          - vitest
+          - '@testing-library/*'
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '08:30'
+    labels:
+      - github-actions
+      - security
