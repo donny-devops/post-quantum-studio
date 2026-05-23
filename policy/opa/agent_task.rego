@@ -5,8 +5,6 @@ import future.keywords.in
 
 default allow := false
 
-default deny := []
-
 allowed_risk_levels := {"low", "medium", "high", "critical"}
 
 allow if {
