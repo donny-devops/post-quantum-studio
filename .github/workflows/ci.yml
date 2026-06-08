@@ -46,7 +46,7 @@ jobs:
 
       - name: Production dependency audit
         run: npm audit --omit=dev --audit-level=high
-
+--production --onlyAllow 'MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause;ISC;0BSD;Unlicense;LGPL-3.0-or-later' --excludePrivatePackages
       - name: Generate SBOM
         run: npm run sbom
 
@@ -58,4 +58,4 @@ jobs:
           if-no-files-found: error
 
       - name: License check
-        run: npx license-checker --production  --excludePrivatePackages --excludePackages '@img/sharp-libvips-linux-x64'
+        run: npx license-checker  --excludePackages '@img/sharp-libvips-linux-x64'
