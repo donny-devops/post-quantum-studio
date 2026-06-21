@@ -1,0 +1,9 @@
+{
+  "languageFeatures": ["v2"],
+  "lints": [
+    {
+      "lint": "needlessParens",
+      "level": "warn"
+    }
+  ]
+}

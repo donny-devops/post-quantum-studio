@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "taskId": "task_policy_example",
+  "correlationId": "corr_policy_example",
+  "fromAgent": "crypto-inventory-agent",
+  "toAgent": "pqc-risk-agent",
+  "intent": "score.crypto.asset",
+  "riskLevel": "medium",
+  "approvalRequired": false,
+  "expiresAt": "2026-05-23T23:59:59Z",
+  "input": {
+    "assetId": "asset-edge-tls"
+  }
+}

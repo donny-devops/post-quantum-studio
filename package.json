@@ -7,13 +7,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "security:secrets": "gitleaks detect --source . --no-git --redact --verbose",
+    "security:audit": "npm audit --audit-level=moderate",
+    "license:check": "license-checker --production --onlyAllow 'MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause;ISC;0BSD;Unlicense' --excludePrivatePackages",
+    "policy:check": "conftest test policy/examples --policy policy/opa",
+    "sbom": "cyclonedx-npm --output-file sbom.cdx.json"
   },
   "dependencies": {
-    "@next/font": "latest",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
     "next": "^15.0.0",
@@ -21,6 +25,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@cyclonedx/cyclonedx-npm": "^1.19.3",
+    "@eslint/eslintrc": "^3.2.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@types/node": "^22.10.2",
@@ -29,7 +35,10 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
     "eslint-config-next": "^15.0.0",
+    "husky": "^9.1.7",
     "jsdom": "^25.0.1",
+    "license-checker": "^25.0.1",
+    "lint-staged": "^15.2.11",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2",
@@ -37,5 +46,13 @@
   },
   "engines": {
     "node": ">=20.11.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --max-warnings=0"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "git diff --check --"
+    ]
   }
 }

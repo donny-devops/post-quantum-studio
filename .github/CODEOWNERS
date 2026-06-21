@@ -1,0 +1,11 @@
+# Default ownership
+* @donny-devops
+
+# Security-sensitive surfaces
+.github/workflows/ @donny-devops
+docs/operations/secrets.md @donny-devops
+policy/ @donny-devops
+infra/ @donny-devops
+mcp/ @donny-devops
+agents/ @donny-devops
+qdk/ @donny-devops
