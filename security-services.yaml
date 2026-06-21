@@ -1,0 +1,26 @@
+security_services:
+  openvas:
+    enabled: false
+    approved_targets_file: security/vulnerability-management/greenbone-targets.md
+    mode: safe_checks
+  lynis:
+    enabled: false
+    profile: security/host-hardening/lynis-profile.prf
+    target: host
+  nikto:
+    enabled: false
+    approved_targets_only: true
+    output_path: /secure/echozulu/nikto.txt
+  clamav:
+    enabled: false
+    config: security/anti-malware/clamav.conf
+    scan_paths: [/scan]
+  ossec:
+    enabled: false
+    config: security/ossec/ossec.conf
+    audit_log: /var/log/echozulu/audit.jsonl
+  aircrack_ng:
+    enabled: false
+    runbook: security/wireless/aircrack-ng-runbook.md
+    approved_wireless_assessment_required: true
+    capture_artifacts_outside_repo: true

@@ -1,0 +1,11 @@
+target: tailscale_node
+recommended_next: local_docker
+available_targets:
+  - local_docker
+  - vps
+  - tailscale_node
+  - aws
+  - k8s
+notes:
+  - tailscale_node is selected for private companion access over the user's tailnet.
+  - switch back to local_docker for local-only validation or aws/k8s after full live gateway status is ready.

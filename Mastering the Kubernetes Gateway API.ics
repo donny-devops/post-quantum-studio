@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Calendar
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+SUMMARY:Mastering the Kubernetes Gateway API
+UID:event-message:4518588
+URL:https://youtube.com/watch?v=cpzYH_Xk_xw
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+DTSTART:20260525T190000Z
+DTEND:20260525T200000Z
+DTSTAMP:20260523T021918Z
+LOCATION:
+DESCRIPTION:For years\, Kubernetes Ingress has been the default\, yet it of
+ ten forces teams into a fragile web of vendor-specific "annotation hell" to
+  handle modern traffic requirements. The Gateway API moves beyond these lim
+ itations\, offering an expressive\, role-oriented standard that fundamental
+ ly rethinks the networking stack.\nThis session demonstrates why the Gatewa
+ y API is the superior choice by breaking down its modular resource model\, 
+ from core infrastructure components to granular routing definitions\, and s
+ howing how it resolves the friction between platform\, DevOps\, and develop
+ ment teams.\nThis session compares in-cluster proxies like Traefik\, Envoy\
+ , and Nginx against managed controllers like Azure Application Gateway for 
+ Containers. The presentation provides practical insights into native traffi
+ c engineering patterns\, such as canary splits and path-based routing\, alo
+ ngside the specific technical steps for automating HTTPS via cert-manager.\
+ nBy breaking down the integration between these components\, the session en
+ sures participants understand exactly how the Gateway API functions and how
+  to implement a fully automated\, secure\, and easier-to-manage networking 
+ stack independently.\nJoin us as:\nhttps://www.linkedin.com/in/wolfgangofne
+ r\nTakes us through the Kubernetes Gateway!
+X-ALT-DESC;FMTTYPE=text/html:<P>For years, Kubernetes Ingress has been the 
+ default, yet it often forces teams into a fragile web of vendor-specific "a
+ nnotation hell" to handle modern traffic requirements. The Gateway API move
+ s beyond these limitations, offering an expressive, role-oriented standard 
+ that fundamentally rethinks the networking stack.<BR /><BR />This session d
+ emonstrates why the Gateway API is the superior choice by breaking down its
+  modular resource model, from core infrastructure components to granular ro
+ uting definitions, and showing how it resolves the friction between platfor
+ m, DevOps, and development teams.<BR /><BR />This session compares in-clust
+ er proxies like Traefik, Envoy, and Nginx against managed controllers like 
+ Azure Application Gateway for Containers. The presentation provides practic
+ al insights into native traffic engineering patterns, such as canary splits
+  and path-based routing, alongside the specific technical steps for automat
+ ing HTTPS via cert-manager.<BR /><BR />By breaking down the integration bet
+ ween these components, the session ensures participants understand exactly 
+ how the Gateway API functions and how to implement a fully automated, secur
+ e, and easier-to-manage networking stack independently.</P><P>&nbsp;</P><P>
+ Join us as:</P><P>https://www.linkedin.com/in/wolfgangofner</P><P>&nbsp;</P
+ ><P>Takes us through the Kubernetes Gateway!</P>
+END:VEVENT
+END:VCALENDAR
