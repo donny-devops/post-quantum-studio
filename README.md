@@ -1,4 +1,4 @@
-# Post-Quantum Studio
+# Post Quantum Studio
 
 A compact Next.js lab for exploring post-quantum cryptography workflows, threat models, and migration readiness.
 
